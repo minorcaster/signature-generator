@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+input::placeholder {
+  color: #ccc; /* Set the placeholder text color */
+  font-style: italic; /* Optional: make the placeholder text italic */
+}
+
+input, button {
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+/*  width: 100%; /* Allow the signature-generator-container to expand according to content size */
+/*  max-width: 800px; /* Set a fixed maximum width for the container */
+}
+
+.signature-generator-container {
+  width: 800px;
+  /*min-width: 400px;*/
+  max-width: 1000px;
+}
