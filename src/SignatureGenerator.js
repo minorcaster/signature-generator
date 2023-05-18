@@ -140,7 +140,7 @@ function SignatureGenerator() {
               <Input placeholder="Pop King" />
             </Form.Item>
             <Form.Item label="你的英文职位:" name="position">
-              <Input placeholder="Executive Chief" />
+              <Input placeholder="Executive Chef" />
             </Form.Item>
             <Form.Item label="你的座机号码:" name="landline">
               <Input placeholder="+86 10-6492-2321" />
