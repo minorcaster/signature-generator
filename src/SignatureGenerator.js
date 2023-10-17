@@ -173,7 +173,7 @@ function SignatureGenerator() {
       <br />
       <Row>
         <Col span={12}>
-        <div style={{ border: '1px solid #000', padding: '10px', backgroundColor: 'transparent' }}>
+        <div style={{ border: '1px solid #000', padding: '10px', backgroundColor: '#ffffff' }}>
          <div dangerouslySetInnerHTML={{ __html: output }} />
         </div>
         </Col>
