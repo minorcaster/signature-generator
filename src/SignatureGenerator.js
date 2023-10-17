@@ -168,6 +168,11 @@ function SignatureGenerator() {
       <br />
       <Row>
         <Col span={12}>
+         <div dangerouslySetInnerHTML={{ __html: output }} />
+        </Col>
+      </Row>
+      <Row>
+        <Col span={12}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Button id="copyButton" type="primary" onClick={copyText} disabled={isCopyButtonDisabled} style={{ width: '200px' }}>
               复制
