@@ -6,9 +6,23 @@ import CenteredContainer from './CenteredContainer';
 const { Title } = Typography;
 
 function SignatureGenerator() {
+
+  const [bgColor, setBgColor] = useState('transparent');  // new state variable for background color
+  
   const [output, setOutput] = useState('');
   const [isCopyButtonDisabled, setIsCopyButtonDisabled] = useState(true);
 
+  const copyText = () => {
+    setBgColor('transparent');  // set background color to transparent before copying
+    navigator.clipboard.writeText(output).then(() => {
+        message.success('Signature copied to clipboard');
+        setBgColor('');  // set the background color back to the original color after copying
+      }, (err) => {
+        message.error('Failed to copy');
+        setBgColor('');  // set the background color back to the original color if copying fails
+      });
+  };
+  
   const generateText = (values) => {
     const { name, position, landline, mobile, email } = values;
     const signature = `
